@@ -319,9 +319,63 @@ border-radius:15px;
 height:130px; 
 position:absolute; 
 top:10px; 
-left:10px;  
-background-size:130px; 
+left:10px;   
 box-shadow:1px 1px 7px #A5A5A5;
+}
+
+.mmbr-photo-mnr {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-ets {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-els {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-hll {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-jkr {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-msd {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-qsm {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-rfq {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-sfl {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-srf {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
+}
+
+.mmbr-photo-zul {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:130px;
 }
 
 .com-logo {
@@ -460,6 +514,61 @@ font-size:13px;
 .mmbr-photo {
 width:70px; 
 height:70px;  
+background-size:70px;
+}
+
+.mmbr-photo-mnr {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-ets {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-els {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-hll {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-jkr {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-msd {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-qsm {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-rfq {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-sfl {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-srf {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
+background-size:70px;
+}
+
+.mmbr-photo-zul {
+background:url(https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/52914731_2065111320237831_6836618831696232448_n.jpg?_nc_cat=104&_nc_ht=scontent.fdac5-1.fna&oh=daa7c4003849e472b247fee7957af7cf&oe=5CE64537) no-repeat center;
 background-size:70px;
 }
 
