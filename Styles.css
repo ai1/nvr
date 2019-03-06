@@ -297,6 +297,24 @@ color:#292929;
 text-align:center; 
 font-weight:bold; 
 color:#0096DC;
+  -webkit-animation-name: com-name;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: com-name;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes com-name {
+  0% {color: #00BAFF;}
+  50% {color: #FF6C00;}
+  100% {color: #00BAFF;}
+}
+
+@keyframes com-name {
+  0% {color: #00BAFF;}
+  50% {color: #FF6C00;}
+  100% {color: #00BAFF;}
 }
 
 .mmbr-name {
