@@ -4,6 +4,95 @@ body {
 font-family:CenturyGothic, 'Century Gothic';
 }
 
+
+.ttl-amnt-bx {
+position:absolute; 
+border:1px solid #BEBEBE; 
+width:100%; 
+border-radius:10px; 
+right:0px; 
+padding-bottom:7px; 
+height:30px; 
+margin-bottom:10px;
+font-weight:bold;
+}
+
+.ttl-amnt-nm {
+left:0px; 
+text-align:right;
+border:0px solid red; 
+width:49%;
+font-size:30px;
+position:absolute;
+animation-name: ttl-amnt-nm;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+-webkit-animation-name: ttl-amnt-nm;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes ttl-amnt-nm {
+  0% {color: #00BAFF;}
+  33.33% {color: #00BAFF;}
+  66.66% {color: transparent;}
+  100% {color: transparent;}
+}
+
+@-webkit-keyframes ttl-amnt-nm {
+  0% {color: #00BAFF;}
+  33.33% {color: #00BAFF;}
+  66.66% {color: transparent;}
+  100% {color: transparent;}
+}
+
+.ttl-amnt-nm-ttl {
+left:0px; 
+text-align:right;
+border:0px solid red; 
+width:49%;
+font-size:30px;
+position:absolute;
+animation-name: ttl-amnt-nm-ttl;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+-webkit-animation-name: ttl-amnt-nm-ttl;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes ttl-amnt-nm-ttl {
+  0% {color: transparent;}
+  33.33% {color: transparent;}
+  66.66% {color: #00BAFF;}
+  100% {color: #00BAFF;}
+}
+
+@-webkit-keyframes ttl-amnt-nm-ttl {
+  0% {color: transparent;}
+  33.33% {color: transparent;}
+  66.66% {color: #00BAFF;}
+  100% {color: #00BAFF;}
+}
+
+.ttl-amnt-amnt {
+right:0px; 
+text-align:left;
+border:0px solid red; 
+width:49%;
+color:#FF6600;
+font-size:30px;
+position:absolute;
+}
+
+
+
+
+
+
+
+
+
 #HIDDENDIV {
     display: none;
 }
