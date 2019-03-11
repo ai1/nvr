@@ -8,12 +8,14 @@ font-family:CenturyGothic, 'Century Gothic';
 .ttl-amnt-bx {
 position:absolute; 
 border:1px solid #BEBEBE; 
-width:100%; 
+width:99%; 
 border-radius:10px; 
-right:0px; 
+right:5px; 
 padding-bottom:7px; 
 height:30px; 
 margin-bottom:10px;
+padding-top:10px;
+font-size:20px;
 font-weight:bold;
 }
 
@@ -22,7 +24,6 @@ left:0px;
 text-align:right;
 border:0px solid red; 
 width:49%;
-font-size:30px;
 position:absolute;
 animation-name: ttl-amnt-nm;
 animation-duration: 3s;
@@ -51,7 +52,6 @@ left:0px;
 text-align:right;
 border:0px solid red; 
 width:49%;
-font-size:30px;
 position:absolute;
 animation-name: ttl-amnt-nm-ttl;
 animation-duration: 3s;
@@ -81,7 +81,6 @@ text-align:left;
 border:0px solid red; 
 width:49%;
 color:#FF6600;
-font-size:30px;
 position:absolute;
 }
 
