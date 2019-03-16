@@ -195,6 +195,23 @@ function openSrf(evt, srfName) {
 
 
 
+function openTna(evt, tnaName) {
+  var i, x, tablinktna;
+  x = document.getElementsByClassName("tna");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinktna = document.getElementsByClassName("tablinktna");
+  for (i = 0; i < x.length; i++) {
+    tablinktna[i].className = tablinktna[i].className.replace(" w3-redtna", "");
+  }
+  document.getElementById(tnaName).style.display = "block";
+  evt.currentTarget.className += " w3-redtna";
+}
+
+
+
+
 function openZul(evt, zulName) {
   var i, x, tablinkzul;
   x = document.getElementsByClassName("zul");
