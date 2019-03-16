@@ -136,6 +136,10 @@ position:absolute;
     display: block;
 }
 
+#tabletna.show tr > *:nth-child(1) {
+    display: block;
+}
+
 #tablezul.show tr > *:nth-child(1) {
     display: block;
 }
@@ -479,6 +483,11 @@ background:url(https://i.imgur.com/xFbg9Jz.jpg) no-repeat center;
 background-size:130px;
 }
 
+.mmbr-photo-tna {
+background:url(https://i.imgur.com/QPKlvCR.jpg) no-repeat center;
+background-size:130px;
+}
+
 .mmbr-photo-zul {
 background:url(https://i.imgur.com/zySOAcC.jpg) no-repeat center;
 background-size:130px;
@@ -560,12 +569,12 @@ z-index:99999;
      text-decoration: none;
 }
 
-.w3-redmnr, .w3-redets, .w3-redels, .w3-redhll, .w3-redjkr, .w3-redmsd, .w3-redqsm, .w3-redrfq, .w3-redsfl, .w3-redsrf, .w3-redzul {
+.w3-redmnr, .w3-redets, .w3-redels, .w3-redhll, .w3-redjkr, .w3-redmsd, .w3-redqsm, .w3-redrfq, .w3-redsfl, .w3-redsrf, .w3-redtna, .w3-redzul {
 color:#fff!important;
 background-color:#F26522!important;
 }
 
-.info, .ets, .els, .hll, .jkr, .msd, .qsm, .rfq, .sfl, .srf, .zul {
+.info, .ets, .els, .hll, .jkr, .msd, .qsm, .rfq, .sfl, .srf, .tna, .zul {
 border:2px solid #F26522;
 padding:5px;
 margin-top:164px;
@@ -577,7 +586,7 @@ left:0px;
 position:absolute;
 }
 
-#Account, #Accountets, #Accountels, #Accounthll, #Accountjkr, #Accountmsd, #Accountqsm, #Accountrfq, #Accountsfl, #Accountsrf, #Accountzul {
+#Account, #Accountets, #Accountels, #Accounthll, #Accountjkr, #Accountmsd, #Accountqsm, #Accountrfq, #Accountsfl, #Accountsrf, #Accounttna, #Accountzul {
 display:none;
 }
 
@@ -670,6 +679,11 @@ background-size:70px;
 
 .mmbr-photo-srf {
 background:url(https://i.imgur.com/xFbg9Jz.jpg) no-repeat center;
+background-size:70px;
+}
+  
+.mmbr-photo-tna {
+background:url(https://i.imgur.com/QPKlvCR.jpg) no-repeat center;
 background-size:70px;
 }
 
