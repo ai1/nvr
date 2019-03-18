@@ -1,9 +1,5 @@
 /* Member profile */
 
-body {
-font-family:CenturyGothic, 'Century Gothic';
-}
-
 
 .ttl-amnt-bx {
 position:absolute; 
@@ -179,8 +175,8 @@ font-family:'Century Gothic', CenturyGothic;
 
 
 #myInput {
-  width: 150px;
-  font-size: 16px;
+  width: 155px;
+  font-size: 15px;
   padding: 8px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
@@ -198,7 +194,7 @@ outline-color:#AAF0FF;
 #myUL li a {
   border: 0px solid red;
   border-radius:0px;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -2px; /* Prevent double borders */
   background-color: transparent;
   font-size: 18px;
   text-decoration: none;
@@ -239,7 +235,7 @@ outline-color:#AAF0FF;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
-z-index:9999999;
+z-index:999;
 }
 
 .prof-of {
