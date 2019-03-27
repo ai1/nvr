@@ -1,6 +1,5 @@
 /* Member profile */
 
-
 .ttl-amnt-bx {
 position:absolute; 
 border:1px solid #BEBEBE; 
@@ -175,8 +174,8 @@ font-family:'Century Gothic', CenturyGothic;
 
 
 #myInput {
-  width: 155px;
-  font-size: 15px;
+  width: 150px;
+  font-size: 16px;
   padding: 8px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
@@ -194,7 +193,7 @@ outline-color:#AAF0FF;
 #myUL li a {
   border: 0px solid red;
   border-radius:0px;
-  margin-top: -2px; /* Prevent double borders */
+  margin-top: -1px; /* Prevent double borders */
   background-color: transparent;
   font-size: 18px;
   text-decoration: none;
@@ -229,13 +228,13 @@ outline-color:#AAF0FF;
 .modal-qs {
   display: none;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   width: 100%;
-  height: 100%;
+  height: 600px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
-z-index:999;
+z-index:9999999;
 }
 
 .prof-of {
