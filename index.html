@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="icon" href="https://i.imgur.com/qYGGPNc.png" type="image/png" sizes="16x16">
-	<title>Noovar</title>
-	
+<title>Noovar</title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- contact form -->
@@ -245,10 +245,15 @@ position:absolute; right:5px; font-size:17px; top:19px;
 .nav a {
 border:0px solid blue;
 padding:25px 15px 25px 15px;
+margin-right:-6px;
 }
 
 .nav a:hover {
 background:#D0D0D0;
+}
+
+.active-nav-a {
+  background-color: #D0D0D0;
 }
 
 .home-page {
@@ -259,8 +264,44 @@ top:0px;
 left:0px;
 width:100%;
 height:100%;
-background:#F7F7F7;
+background:radial-gradient(white);
 text-align:center;
+}
+
+.nvr{
+	margin: 0;
+	padding: 0;
+	font-size: 150px;
+	color:#424242;
+	text-transform: uppercase;
+	-webkit-transform: rotate(-20deg)  skew(25deg);
+	-ms-transform: rotate(-20deg)  skew(25deg);
+	-o-transform: rotate(-20deg)  skew(25deg);
+	transform: rotate(-20deg)  skew(25deg);
+	animation:animate 5s ease-in-out infinite;
+border:0px solid red;
+font-family:CenturyGothic;
+}
+
+@keyframes animate{
+	0%,100%{
+		-webkit-transform: rotate(-20deg) skew(25deg) translate(0,0);
+		-ms-transform: rotate(-20deg) skew(25deg) translate(0,0);
+		-o-transform: rotate(-20deg) skew(25deg) translate(0,0);
+		transform: rotate(-20deg) skew(25deg) translate(0,0);
+		text-shadow: -5px 5px 0 rgba(0,0,0,.2);
+	}
+
+	50%{
+		-webkit-transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+		-ms-transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+		-o-transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+		transform: rotate(-20deg) skew(25deg) translate(50px,-50px);
+		text-shadow: -50px 50px 0 rgba(0,0,0,.2);
+		-webkit-filter: blur(5px);
+		-o-filter: blur(5px);
+		filter: blur(5px);
+	}
 }
 
 .bd-cont {
@@ -345,6 +386,9 @@ display:none;
 
 
 @media only screen and (max-width: 600px) {
+.nvr {
+font-size: 60px;
+}
 
 .nav {
 display:none;
@@ -446,12 +490,13 @@ margin:-1px 0px -1px 0px;
 
 <div class="top-bar">
 <div style="position:absolute; top:-3px; left:9px;"><a href="#"><img src="https://i.imgur.com/qYGGPNc.png" width="65"/></a></div>
-<div class="nav">
-<a href="#profile"><i style="font-size:17px;" class="fa fa-user"></i> PROFILE/ACCONT</a>
-<a href="#team"><i style="font-size:14px;" class="fa fa-users"></i> TEAM</a>
-<a href="#members"><i style="font-size:16px;" class="fa fa-user-plus"></i> MEMBERS</a>
-<a href="#contact"><i style="font-size:15px;" class="fa fa-envelope"></i> CONTACT</a>
-<a href="#about"><i style="font-size:18px;" class="fa fa-info-circle"></i> ABOUT</a>
+<div class="nav" id="nav">
+<a style="display:none;" class="nav-a active-nav-a">1</a>
+<a href="#profile" class="nav-a"><i style="font-size:17px;" class="fa fa-user"></i> PROFILE/ACCONT</a>
+<a href="#team" class="nav-a"><i style="font-size:14px;" class="fa fa-users"></i> TEAM</a>
+<a href="#members" class="nav-a"><i style="font-size:16px;" class="fa fa-user-plus"></i> MEMBERS</a>
+<a href="#contact" class="nav-a"><i style="font-size:15px;" class="fa fa-envelope"></i> CONTACT</a>
+<a href="#about" class="nav-a"><i style="font-size:18px;" class="fa fa-info-circle"></i> ABOUT</a>
 </div>
 
 <!-- nav for mob -->
@@ -468,7 +513,9 @@ margin:-1px 0px -1px 0px;
 </div>
 </div>
 
-<div class="home-page">SGFF<br/>sdfsdfsdflksdjflksdjf</div>
+<div class="home-page">
+<div class="nvr">Noovar</div>
+</div>
 
 <!-- body content start -->
 <div class="bd-cont">
@@ -4722,7 +4769,7 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 <!-- contact -->
 <div id="contact" class="contact">
-<div style="border:0px solid red; display:flex;  align-items:center;  justify-content:center; background:#FDFDF9; border-radius:5px; box-shadow:3px 3px 15px #323232;">
+<div style="border:0px solid red; display:flex;  align-items:center;  justify-content:center; background:#FDFDF9; border-radius:5px; box-shadow:0px 3px 15px #323232;">
 <form class="jotform-form" action="https://submit.jotform.me/submit/90921264335455/" method="post" name="form_90921264335455" id="90921264335455" accept-charset="utf-8">
   <input type="hidden" name="formID" value="90921264335455" />
   <div class="form-all">
@@ -4791,8 +4838,7 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
   <script type="text/javascript">
   document.getElementById("si" + "mple" + "_spc").value = "90921264335455-90921264335455";
   </script>
-  <div class="formFooter-heightMask">
-  </div>
+  
 </form>
 </div>
 </div>
@@ -4819,6 +4865,19 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 <!-- body content end -->
 
 <script src='https://rawcdn.githack.com/ai1/nvr/cd42326513f1aafc728e03e773d4957686ac1b8c/TabForMob.js'></script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("nav");
+var btns = header.getElementsByClassName("nav-a");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active-nav-a");
+  current[0].className = current[0].className.replace(" active-nav-a", "");
+  this.className += " active-nav-a";
+  });
+}
+</script>
 
 </body>
 </html>
