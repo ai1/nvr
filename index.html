@@ -314,9 +314,9 @@ border:0px solid red;
 
 .team {
 background-color: #FFF7F5;
-border-top:2px solid white;
-padding-top:65px;
-padding-bottom:60px;
+border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
+padding-top:30px;
+padding-bottom:30px;
 }
 
 
@@ -353,7 +353,7 @@ padding:10px 0px 10px 0px;
 
 .about {
 display:flex; align-items:center; justify-content:center; background:#636466; 
-color:white; padding-top:65px; padding-bottom:60px; height:200px; border-top:2px solid white;
+color:white; padding-top:30px; padding-bottom:10px; height:200px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
 }
 
 .abt-img {
@@ -379,7 +379,67 @@ text-decoration:none;
 }
 
 .contact {
-background:#FF7200; padding-top:65px; padding-bottom:60px; display:flex;  align-items:center;  justify-content:center;
+background:#FF7200; padding-top:65px; padding-bottom:60px; display:flex;  align-items:center;  justify-content:center; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
+}
+
+.members {
+background:#F2FCFF; color:#7C7C7C; text-align:center; padding-top:30px; padding-bottom:30px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
+}
+
+.member-bx {
+border:0px solid;
+display:block;
+width:100%;
+outline:none;
+font-size:90%;
+font-family:CenturyGothic;
+background:transparent;
+}
+
+.member-bx ul {
+list-style:none;
+padding:0px;
+}
+
+.member-bx ul li {
+display:inline-block;
+border:0px solid #8B8B8B;
+margin:5px 7px 5px 7px;
+width:14%;
+padding:1px 1px 5px 1px;
+border-radius: 10px 10px 0px 0px;
+box-shadow:0px 0px 3px #4C4C4C;
+}
+
+.member-bx ul li img {
+margin-top:0px;
+box-shadow:0px 1px 7px #6C6C6C;
+border-radius: 10px 10px 0px 0px;
+}
+
+.member-bx ul li b {
+display:block;
+margin-bottom:-10px;
+font-size:110%;
+}
+
+.mmbrhr {
+display:block;
+border: 0px solid transparent;
+}
+
+.mmbrhr-mob {
+display:none;
+border: 0px solid transparent;
+}
+
+
+.page-ttl {
+border-bottom:1px solid; width:100%; text-align:center; font-size:30px; background: linear-gradient(to right, transparent, white, transparent); color:#4B4B4B; top:65px; position:absolute;
+}
+
+.page-ttl-posless {
+border-bottom:1px solid; width:100%; text-align:center; font-size:30px; background: linear-gradient(to right, transparent, white, transparent); color:#4B4B4B;
 }
 
 
@@ -483,15 +543,15 @@ border-radius:0px 0px 0px 0px;
 
 .about {
 display:flex; align-items:center; justify-content:center; background:#636466; 
-color:white; padding-top:65px; padding-bottom:60px; height:300px; border-top:2px solid white;
+color:white; padding-top:0px; padding-bottom:60px; height:380px; border-top:2px solid white;
 }
 
 .abt-img {
-position:absolute; border:0px solid red; left:0px; width:98%; background:white; border-radius: 0px 55px 0px 0px; box-shadow:5px 5px 15px #404040; margin-top:-70px;
+position:absolute; border:0px solid red; left:0px; width:98%; background:white; border-radius: 0px 55px 0px 0px; box-shadow:5px 5px 15px #404040; margin-top:-5px;
 }
 
 .abt-descri {
-position:absolute; width:98%; border:0px solid green; right:0px; color:white; font-family:TimeBurner; font-size:18px; text-shadow:1px 1px 5px #141414; text-align:right; margin-top:90px;
+position:absolute; width:98%; border:0px solid green; right:0px; color:white; font-family:TimeBurner; font-size:18px; text-shadow:1px 1px 5px #141414; text-align:right; margin-top:150px;
 }
 
 .abt-descri-addr {
@@ -526,6 +586,35 @@ border:0px solid red;
   padding: 10px;
 padding-bottom: 30px;
 margin:-1px 0px -1px 0px;
+}
+
+
+.member-bx {
+font-size:80%;
+}
+
+.member-bx ul li {
+display:inline-block;
+
+margin:10px 5px 10px 5px;
+width:40%;
+}
+
+.member-bx ul li img {
+border-radius:10px 10px 0px 0px;
+}
+
+.member-bx ul li b {
+font-size:100%;
+}
+
+.mmbrhr {
+display:none;
+border: 0px solid transparent;
+}
+
+.mmbrhr-mob {
+display:block;
 }
 
 }
@@ -568,7 +657,10 @@ margin:-1px 0px -1px 0px;
 <!-- body content start -->
 <div class="bd-cont">
 
-<div class="about" id="about">
+<div id="about" style="display:flex;  align-items:center;  justify-content:center; padding-top:65px; border:0px solid #6D6D6D;">
+<div style="text-align:center; font-size:25px; border:1px solid #6D6D6D; border-top:0px solid; border-bottom:0px solid; padding:0px 10px 5px 10px; border-radius:0px 0px 10px 10px;">About Us</div>
+</div>
+<div class="about">
 <div class="abt-img">
 <img width="150" style="float:right; padding:3px 3px 3px 3px;" src="https://rawcdn.githack.com/ai1/nvr/7f8ffb74f21de7ac29607e54eb70d066eee4fce4/Logo.svg" />
 </div>
@@ -584,7 +676,10 @@ margin:-1px 0px -1px 0px;
 
 
 <!-- team -->
-<div id="team" class="team">
+<div id="team" style="display:flex;  align-items:center;  justify-content:center; padding-top:65px; border:0px solid #6D6D6D;">
+<div style="text-align:center; font-size:25px; border:1px solid #6D6D6D; border-top:0px solid; border-bottom:0px solid; padding:0px 10px 5px 10px; border-radius:0px 0px 10px 10px;">Team</div>
+</div>
+<div class="team">
 <ul>
 <li>
 <div class="tm-pic"><img src="https://pbs.twimg.com/profile_images/970623797689712642/-KbFw0-O_400x400.jpg" alt="Avatar" style="width:100%">
@@ -627,8 +722,10 @@ margin:-1px 0px -1px 0px;
 
 
 <!-- profile/account -->
-<div style="padding-top:65px; padding-bottom:60px;" id="profile">
-
+<div id="profile" style="display:flex;  align-items:center;  justify-content:center; padding-top:65px; border:0px solid #6D6D6D;">
+<div style="text-align:center; font-size:25px; border:1px solid #6D6D6D; border-top:0px solid; border-bottom:0px solid; padding:0px 10px 5px 10px; border-radius:0px 0px 10px 10px;">Profile/Account</div>
+</div>
+<div style="padding-top:65px; padding-bottom:60px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;">
 <div id="mnr239" class="modal-qs">
   <div class="modal-dialog-qs">
     <div class="modal-content-qs">
@@ -4770,8 +4867,6 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 
 <div align="center" style="color:#4B4B4B;">
-<span style="font-family:TimeBurner; font-size:25px; border-left:1px solid #505050; border-bottom:1px solid #505050; border-right:1px solid #505050; padding-left:10px; padding-bottom:6px; padding-right:10px; border-radius:0px 0px 15px 15px;">My Profile/Account</span>
-<br/><br/><br/>
 <table border="0">
 <tr>
 <td align="right">Type Your Name : &nbsp;</td>
@@ -4826,7 +4921,10 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 
 <!-- contact -->
-<div id="contact" class="contact">
+<div id="contact" style="display:flex;  align-items:center;  justify-content:center; padding-top:65px; border:0px solid #6D6D6D;">
+<div style="text-align:center; font-size:25px; border:1px solid #6D6D6D; border-top:0px solid; border-bottom:0px solid; padding:0px 10px 5px 10px; border-radius:0px 0px 10px 10px;">Contact to Us</div>
+</div>
+<div class="contact">
 <div style="border:0px solid red; display:flex;  align-items:center;  justify-content:center; background:#FDFDF9; border-radius:5px; box-shadow:0px 3px 15px #323232;">
 <form class="jotform-form" action="https://submit.jotform.me/submit/90921264335455/" method="post" name="form_90921264335455" id="90921264335455" accept-charset="utf-8">
   <input type="hidden" name="formID" value="90921264335455" />
@@ -4904,8 +5002,33 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 
 <!-- members -->
-<div id="members" style="background:white; color:#7C7C7C; text-align:center; height:100px; padding-top:65px; padding-bottom:60px;">
-<br/><br/>Members
+<div id="members" style="display:flex;  align-items:center;  justify-content:center; padding-top:65px; border:0px solid #6D6D6D;">
+<div style="text-align:center; font-size:25px; border:1px solid #6D6D6D; border-top:0px solid; border-bottom:0px solid; padding:0px 10px 5px 10px; border-radius:0px 0px 10px 10px;">Members</div>
+</div>
+<div class="members">
+<button class="member-bx">
+<ul class="a">
+<li><img width="100%" src="https://i.imgur.com/46MjrEa.png" /><br/><br/><b>ANAMUL HAQ</b><br/>Fatulla<br/>Narayanganj.</li>
+<li><img width="100%" src="https://i.imgur.com/WyECv8T.png" /><br/><br/><b>SAIFUL ISLAM</b><br/>Kadamtali<br/>Dhaka.</li>
+<hr class="mmbrhr-mob">
+<li><img width="100%" src="https://i.imgur.com/bah38JO.jpg" /><br/><br/><b>MD MASUD</b><br/>Jatrabari<br/>Dhaka.</li>
+<li><img width="100%" src="https://i.imgur.com/Qmt8WuQ.png" /><br/><br/><b>MD ELIYAS</b><br/>Paltan<br/>Dhaka.</li>
+<hr class="mmbrhr-mob">
+<li><img width="100%" src="https://i.imgur.com/zySOAcC.jpg" /><br/><br/><b>ZIAUL HAQ</b><br/>Madanpur<br/>Narayanganj.</li>
+<li><img width="100%" src="https://i.imgur.com/7YCMSBK.jpg" /><br/><br/><b>ZIAUL QASEM</b><br/>Madarpur<br/>Narayanganj.</li>
+<hr class="mmbrhr-mob">
+<hr class="mmbrhr">
+<li><img width="100%" src="https://i.imgur.com/iYXY1pd.jpg" /><br/><br/><b>HELAL UDDIN</b><br/>Kejaniganj<br/>Dhaka.</li>
+<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>RAFIQUL ISLAM</b><br/>Muladi<br/>Barishal.</li>
+<hr class="mmbrhr-mob">
+<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>JAKIR HOSSAIN</b><br/>Muladi<br/>Barishal.</li>
+<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>SHARIF UDDIN</b><br/>Muladi<br/>Barishal.</li>
+<hr class="mmbrhr-mob">
+<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>TANIYA AKTER</b><br/>Keraniganj<br/>Dhaka.</li>
+<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>MD EHTESHAM</b><br/>Madanpur<br/>Narayanganj.</li>
+</ul>
+</button>
+
 </div>
 <!-- members end -->
 
