@@ -324,6 +324,7 @@ padding-bottom:30px;
 .team ul li {
 width:100%;
 padding:5px;
+text-shadow:1px 1px 3px #A0A0A0;
 }
 
 .tm-pic {
@@ -352,20 +353,20 @@ padding:10px 0px 10px 0px;
 }
 
 .about {
-display:flex; align-items:center; justify-content:center; background:#636466; 
-color:white; padding-top:30px; padding-bottom:10px; height:200px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
+background:#535353; 
+color:white; padding-top:100px; padding-bottom:100px; width:100%; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
 }
 
 .abt-img {
-position:absolute; border:0px solid red; left:0px; width:47%; background:white; border-radius: 0px 55px 0px 0px; box-shadow:5px 5px 15px #404040;
+border:0px solid red; width:47%; height:105px; background:white; border-radius: 0px 55px 0px 0px; box-shadow:5px 5px 15px #404040;
 }
 
 .abt-descri {
-position:absolute; width:51%; border:0px solid green; right:0px; color:white; font-family:TimeBurner; font-size:25px; text-shadow:1px 1px 5px #141414; text-align:right; padding-right:5px;
+position:absolute; right:5px; top:205px; width:51%; border:0px solid green; color:white; font-family:TimeBurner; font-size:25px; text-shadow:1px 1px 5px #141414; text-align:right;
 }
 
 .abt-descri-addr {
-border:0px solid red; font-size:16px; display:flex; align-items:center; justify-content:center; float:right; margin-right:-5px;
+border:0px solid red; font-size:16px; margin-right:-5px; display:block; margin-top:15px;
 }
 
 .abt-descri-addr a {
@@ -383,7 +384,7 @@ background:#FF7200; padding-top:65px; padding-bottom:60px; display:flex;  align-
 }
 
 .members {
-background:#F2FCFF; color:#7C7C7C; text-align:center; padding-top:30px; padding-bottom:30px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
+background:#F2FCFF; color:#7C7C7C; text-align:center; padding-top:30px; padding-bottom:60px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
 }
 
 .member-bx {
@@ -394,6 +395,7 @@ outline:none;
 font-size:90%;
 font-family:CenturyGothic;
 background:transparent;
+text-shadow:1px 1px 3px #A0A0A0;
 }
 
 .member-bx ul {
@@ -406,7 +408,7 @@ display:inline-block;
 border:0px solid #8B8B8B;
 margin:5px 7px 5px 7px;
 width:14%;
-padding:1px 1px 5px 1px;
+padding:0px 0px 5px 0px;
 border-radius: 10px 10px 0px 0px;
 box-shadow:0px 0px 3px #4C4C4C;
 }
@@ -441,6 +443,53 @@ border-bottom:1px solid; width:100%; text-align:center; font-size:30px; backgrou
 .page-ttl-posless {
 border-bottom:1px solid; width:100%; text-align:center; font-size:30px; background: linear-gradient(to right, transparent, white, transparent); color:#4B4B4B;
 }
+
+.footer {
+background:#4C4C4C; height:60px; display:flex; align-items:center; justify-content:center; border:1px solid #4C4C4C; border-bottom:0px solid; border-radius:0px 0px 0px 0px; font-family:TimeBurner; font-size:16px; color:#4C4C4C;
+}
+
+.footer-bx {
+width:97%; height:100%; background:white; border:0px solid red; border-radius:20px 20px 0px 0px; bottom:0px; display:flex; align-items:center; justify-content:center; overflow:hidden;
+}
+
+.footer-bx table {
+margin-bottom:-15px;
+text-shadow:1px 1px 3px #A0A0A0;
+}
+
+.footer-bx table a {
+text-decoration:none;
+color:#754C24;
+font-family:TimeBurner;
+}
+
+.footer-bx table a:hover {
+color:#4C4C4C;
+}
+
+.footer-bx table img {
+-webkit-filter: grayscale(95%);
+filter: grayscale(95%);
+transition:all 0.1s;
+}
+
+.footer-bx table img:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+}
+
+
+.footer-mob {
+display:none;
+}
+
+.footer-mob-bx {
+display:none;
+}
+
+
+
+
 
 
 
@@ -512,7 +561,7 @@ position:absolute; top:5px; left:5px;
 
 .nav-mob-show {
 display:none;
-background:#2e2e2e;
+background:#636466;
 width:50%;
 height:100%;
 position:fixed;
@@ -520,8 +569,6 @@ top:60px;
 right:0px;
 padding:5px;
 cursor:auto;
-text-transform:uppercase;
-text-shadow:1px 1px 3px #727272;
 line-height:2;
 font-size:16px;
 z-index:99999;
@@ -535,27 +582,26 @@ text-align:right;
 
 .nav-mob-show ul li a {
 color:white;
-border-bottom:1px solid #656565;
-border-right:1px solid #656565;
 padding-right:4px;
 border-radius:0px 0px 0px 0px;
+text-transform:uppercase;
+text-shadow:1px 1px 5px #090909;
 }
 
 .about {
-display:flex; align-items:center; justify-content:center; background:#636466; 
-color:white; padding-top:0px; padding-bottom:60px; height:380px; border-top:2px solid white;
+background:#636466; color:white; padding-top:40px; padding-bottom:240px; border-top:1px solid #6D6D6D; border-radius:20px 20px 0px 0px;
 }
 
 .abt-img {
-position:absolute; border:0px solid red; left:0px; width:98%; background:white; border-radius: 0px 55px 0px 0px; box-shadow:5px 5px 15px #404040; margin-top:-5px;
+border:0px solid red; width:98%;
 }
 
 .abt-descri {
-position:absolute; width:98%; border:0px solid green; right:0px; color:white; font-family:TimeBurner; font-size:18px; text-shadow:1px 1px 5px #141414; text-align:right; margin-top:150px;
+border:0px solid green; font-family:TimeBurner; font-size:18px; text-shadow:1px 1px 5px #141414; text-align:justify; margin-top:80px; left:0px; width:98%; left:5px;
 }
 
 .abt-descri-addr {
-border:0px solid red; font-size:16px; display:block; float:right; margin-right:3px; margin-top:20px;
+border:0px solid red; font-size:16px; display:block; margin-top:20px; margin-right:0px; text-align:right;
 }
 
 .abt-descri-addr a {
@@ -595,7 +641,6 @@ font-size:80%;
 
 .member-bx ul li {
 display:inline-block;
-
 margin:10px 5px 10px 5px;
 width:40%;
 }
@@ -615,6 +660,48 @@ border: 0px solid transparent;
 
 .mmbrhr-mob {
 display:block;
+}
+
+
+.footer {
+display:none;
+}
+
+.footer-bx {
+display:none;
+}
+
+.footer-mob {
+background:#4C4C4C;  display:flex; align-items:center; justify-content:center; border:1px solid #4C4C4C; border-bottom:0px solid; border-radius:0px 0px 0px 0px; font-family:TimeBurner; font-size:14px; color:#4C4C4C;
+}
+
+.footer-mob-bx {
+width:97%; height:100%; background:white; border:0px solid red; border-radius:20px 20px 0px 0px; bottom:0px; display:flex; align-items:center; justify-content:center; overflow:hidden;
+}
+
+.footer-mob-bx table {
+text-shadow:1px 1px 3px #A0A0A0;
+}
+
+.footer-mob-bx table a {
+text-decoration:none;
+color:#754C24;
+font-family:TimeBurner;
+}
+
+.footer-mob-bx table a:hover {
+color:#4C4C4C;
+}
+
+.footer-mob-bx table img {
+-webkit-filter: grayscale(95%);
+filter: grayscale(95%);
+transition:all 0.1s;
+}
+
+.footer-mob-bx table img:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
 }
 
 }
@@ -682,37 +769,37 @@ display:block;
 <div class="team">
 <ul>
 <li>
-<div class="tm-pic"><img src="https://pbs.twimg.com/profile_images/970623797689712642/-KbFw0-O_400x400.jpg" alt="Avatar" style="width:100%">
+<div class="tm-pic"><img src="https://i.imgur.com/46MjrEa.png" alt="Avatar" style="width:100%">
   <div class="tm-info">
     <span><b>ANAMUL HAQ</b></span><br/>
-    <span>Interior Designer</span>
+    <span>(Founder & IT Director)<br/>m.anamulhaq@yahoo.com</span>
   </div>
   </div>
 </li>
 
 <li>
-<div class="tm-pic"><img src="https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg" alt="Avatar" style="width:100%">
+<div class="tm-pic"><img src="https://i.imgur.com/WyECv8T.png" alt="Avatar" style="width:100%">
   <div class="tm-info">
     <span><b>SAIFUL ISLAM</b></span><br/>
-    <span>Interior Designer</span>
+    <span>(Entrepreneur)<br/>saiful.neser@gmail.com</span>
   </div>
   </div>
 </li>
 
 <li>
-<div class="tm-pic"><img src="https://pbs.twimg.com/profile_images/718965261714526209/WEXxF8lh_400x400.jpg" alt="Avatar" style="width:100%">
+<div class="tm-pic"><img src="https://i.imgur.com/bah38JO.jpg" alt="Avatar" style="width:100%">
   <div class="tm-info">
     <span><b>MD MASUD</b></span><br/>
-    <span>Interior Designer</span>
+    <span>(Adviser)<br/>01747908267</span>
   </div>
   </div>
 </li>
 
 <li>
-<div class="tm-pic"><img src="https://physiciandirectory.brighamandwomens.org/Custom/Photos/hires/12210.jpg" alt="Avatar" style="width:100%">
+<div class="tm-pic"><img src="https://i.imgur.com/Qmt8WuQ.png" alt="Avatar" style="width:100%">
   <div class="tm-info">
     <span><b>MD ELIYAS</b></span><br/>
-    <span>Interior Designer</span>
+    <span>(Marketing Director)<br/>01869586522</span>
   </div>
   </div>
 </li>
@@ -4869,7 +4956,7 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 <div align="center" style="color:#4B4B4B;">
 <table border="0">
 <tr>
-<td align="right">Type Your Name : &nbsp;</td>
+<td align="right">Type Your Name : </td>
 <td>
 
 <input style="font-family:'Century Gothic', CenturyGothic;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Type Your Name..." title="Type your Name">
@@ -4878,7 +4965,7 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 </tr>
 
 <tr>
-<td align="right">Click Here : &nbsp;</td>
+<td align="right">Click Here : </td>
 <td>
 
 <div style='position:relative; border: 1px solid #ddd; width:150px; height:20px; overflow: hidden; padding: 8px; border-radius:20px; box-shadow: 0px  0px 8px #BABABA;'>
@@ -5024,7 +5111,7 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 <li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>JAKIR HOSSAIN</b><br/>Muladi<br/>Barishal.</li>
 <li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>SHARIF UDDIN</b><br/>Muladi<br/>Barishal.</li>
 <hr class="mmbrhr-mob">
-<li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>TANIYA AKTER</b><br/>Keraniganj<br/>Dhaka.</li>
+<li><img width="100%" src="https://i.imgur.com/JGKyhKs.jpg" /><br/><br/><b>TANIYA AKTER</b><br/>Keraniganj<br/>Dhaka.</li>
 <li><img width="100%" src="https://i.imgur.com/xFbg9Jz.jpg" /><br/><br/><b>MD EHTESHAM</b><br/>Madanpur<br/>Narayanganj.</li>
 </ul>
 </button>
@@ -5034,10 +5121,33 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 
 <!-- footer -->
-<div style="background:#4C4C4C; color:white; text-align:center; height:100px;">
-<br/><br/>Footer
+<div class="footer">
+<div class="footer-bx">
+<table border="0" width="100%">
+<tr>
+<td align="right" width="47%"><span style="font-size:14px;">&copy;</span> <a href="http://noovar.blogspot.com">noovar.blogspot.com</a></td>
+<td align="center"><a href="#"><img width="35" src="https://i.imgur.com/qYGGPNc.png" /></a></td>
+<td align="left" width="47%">Created by : <a href="http://anamul-haq.blogspot.com" target="_blank">Anamul Haq<a/></td>
+</tr>
+</table>
+</div>
 </div>
 <!-- footer end -->
+
+<!-- footer-mob -->
+<div class="footer-mob">
+<div class="footer-mob-bx">
+<table border="0" width="100%">
+<tr>
+<td align="center"><a href="#"><img width="35" src="https://i.imgur.com/qYGGPNc.png" /></a><br/>
+<span style="font-size:12px;">&copy;</span> <a href="http://noovar.blogspot.com">noovar.blogspot.com</a><br/>
+Created by : <a href="http://anamul-haq.blogspot.com" target="_blank">Anamul Haq<a/><br/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<!-- footer-mob end -->
 
 
 
