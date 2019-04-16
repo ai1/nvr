@@ -246,6 +246,8 @@ top:7px;
 .modal-qs:target {
   display: table;
   position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 /* The modal box */
