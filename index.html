@@ -19,7 +19,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/ai1/Fonts/7c5b57ae82b7fe285c9cd8efb78e5fc4b1dde9c9/Fonts.css" />
-<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/ai1/nvr/8c19a718b0cf9a88c129dc28a96dacf14353dce0/styles.css" />
+<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/ai1/nvr/2246fba74deff3abf1eb67cba1a585a289f403b7/styles.css" />
 
 <!-- contact form -->
 <script type="text/javascript">
@@ -58,6 +58,26 @@ $(document).ready(function(){
   $(".nav-mob-x").hide(300);
   $(".nav-mob").show(300);
   $(".nav-mob-show").hide(300);
+});
+});
+
+$(document).ready(function(){
+  $(".notice").click(function(){
+  $(".nav-mob-x").hide(300);
+  $(".ntc-content").show(300);
+  $(".nav-mob-show").hide(300);
+});
+});
+
+$(document).ready(function(){
+  $(".ntc-content-clc").click(function(){
+  $(".ntc-content").hide(300);
+});
+});
+
+$(document).ready(function(){
+  $(".ntc-ttl-desk").click(function(){
+  $(".ntc-content").show(300);
 });
 });
 </script>
@@ -235,6 +255,40 @@ color:#4B4B4B;
 
 .top-bar {
 background:white; border:0px solid red; position:fixed; top:0px; left:0px; width:100%; height:60px; box-shadow:1px 1px 10px #A0A0A0; overflow:hidden; z-index:9999;
+}
+
+
+
+.notif-desk {
+color:#FF5A00;
+border:0px solid red;
+animation: notif-desk 2s;
+animation-iteration-count: infinite;
+display:inline-block;
+}
+
+@keyframes notif-desk {
+  0% { transform: rotate(20deg); color:#FF5A00; }
+  10% { transform: rotate(-20deg); color:#FF5A00; }
+  20% { transform: rotate(20deg); color:#FF5A00; }
+  30% { transform: rotate(0deg); color:#373737; }
+}
+
+.ntc-ttl-desk {
+color:#FF5A00;
+animation: ntc-ttl-desk 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes ntc-ttl-desk {
+  0% { color:#FF5A00; }
+  10% { color:#FF5A00; }
+  20% { color:#FF5A00; }
+  30% { color:#373737; }
+}
+
+.ntc-content {
+display:none; position:fixed; left:0px; top:60px; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.8); font-family:CenturyGothic;
 }
 
 .nav {
@@ -436,14 +490,6 @@ border: 0px solid transparent;
 }
 
 
-.page-ttl {
-border-bottom:1px solid; width:100%; text-align:center; font-size:30px; background: linear-gradient(to right, transparent, white, transparent); color:#4B4B4B; top:65px; position:absolute;
-}
-
-.page-ttl-posless {
-border-bottom:1px solid; width:100%; text-align:center; font-size:30px; background: linear-gradient(to right, transparent, white, transparent); color:#4B4B4B;
-}
-
 .footer {
 background:#4C4C4C; height:60px; display:flex; align-items:center; justify-content:center; border:1px solid #4C4C4C; border-bottom:0px solid; border-radius:0px 0px 0px 0px; font-family:TimeBurner; font-size:16px; color:#4C4C4C;
 }
@@ -524,6 +570,60 @@ font-size: 60px;
 display:none;
 }
 
+
+.notif {
+border:3px solid white;
+position:absolute;
+top:-2px;
+left:-5px;
+display:flex; align-items:center; justify-content:center;
+width:15px;
+height:15px;
+border-radius:100%;
+background:red;
+z-index:99;
+}
+
+.notif-img {
+filter:invert(100%);
+animation: notif-img 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes notif-img {
+  0% { transform: rotate(20deg); filter:invert(100%); }
+  10% { transform: rotate(-20deg); filter:invert(100%); }
+  20% { transform: rotate(20deg); filter:invert(100%); }
+  30% { transform: rotate(0deg); filter:invert(0%); }
+}
+
+.notice {
+font-style:italic;
+animation: notice 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes notice {
+   0% { color:#FF5A00; }
+  50% { color:#373737; }
+  100% { color:#FF5A00; }
+}
+
+.ntc-content {
+display:none; position:fixed; left:0px; top:60px; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.8); font-family:CenturyGothic;
+}
+
+.ntc-ttl {
+animation: ntc-ttl 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes ntc-ttl {
+  0% { color:#FF5A00; }
+  50% { color:#373737; }
+  100% { color:#FF5A00; }
+}
+
 .nav-mob {
 position:absolute;
 right:13px;
@@ -531,7 +631,7 @@ top:12px;
 width:39px;
 height:40px;
 border:0px solid red;
-overflow:hidden;
+
 }
 
 .nav-mob-img {
@@ -714,8 +814,11 @@ filter: grayscale(0%);
 
 <div class="top-bar">
 <div style="position:absolute; top:-3px; left:9px;"><a href="#"><img src="https://i.imgur.com/qYGGPNc.png" width="65"/></a></div>
+
 <div class="nav" id="nav">
 <a style="display:none;" class="nav-a active-nav-a">1</a>
+
+<!--<a style="font-style:italic; cursor:pointer;" class="nav-a ntc-ttl-desk"><div class="notif-desk"><i style="font-size:15px;" class="fa fa-bell"></i></div> NOTICE</a>-->
 <a href="#profile" class="nav-a"><i style="font-size:17px;" class="fa fa-user"></i> PROFILE/ACCONT</a>
 <a href="#team" class="nav-a"><i style="font-size:14px;" class="fa fa-users"></i> TEAM</a>
 <a href="#members" class="nav-a"><i style="font-size:16px;" class="fa fa-user-plus"></i> MEMBERS</a>
@@ -724,10 +827,15 @@ filter: grayscale(0%);
 </div>
 
 <!-- nav for mob -->
-<div class="nav-mob"><img class="nav-mob-img" width="64" src="https://cdn.iconscout.com/icon/free/png-256/menu-bar-lines-option-list-hamburger-web-6-3228.png"/></div>
+<div class="nav-mob">
+
+<!--<div class="notif"><img class="notif-img" width="75%" src="http://cdn.onlinewebfonts.com/svg/img_419719.png" /></div>-->
+
+<img class="nav-mob-img" width="64" src="https://cdn.iconscout.com/icon/free/png-256/menu-bar-lines-option-list-hamburger-web-6-3228.png"/></div>
 <div class="nav-mob-x"><img class="nav-mob-x-img" width="30" src="https://image.flaticon.com/icons/png/512/53/53804.png"/></div>
 <div class="nav-mob-show">
 <ul>
+  <!--<li><a class="nav-mob-mn"><span class="notice">Notice</span></a></li>-->
   <li><a href="#profile" class="nav-mob-mn">Profile/Account</a></li>
   <li><a href="#team" class="nav-mob-mn">Team</a></li>
   <li><a href="#members" class="nav-mob-mn">Members</a></li>
@@ -5118,6 +5226,44 @@ else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value
 
 </div>
 <!-- members end -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- notice -->
+<div class="ntc-content">
+
+
+
+<div style="position:absolute; width:80%; height:70%; top:10%; left:10%; background-color:white; border-radius:10px; font-size:20px; display:flex; align-items:center; justify-content:center; overflow:auto;">
+
+<span class="ntc-ttl" style="font-size:20px; color:#FF5A00; position:absolute; top:10px; left:10px; font-weight:bold; font-style:italic;">Notice Board</span>
+
+<span class="ntc-content-clc"><i style="font-size:25px; color:#FF5A00; position:absolute; top:10px; right:10px; font-weight:normal; cursor:pointer;" class="fa fa-times"></i></span>
+
+There are no notice now...
+</div>
+
+</div>
+<!-- notice end -->
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- footer -->
