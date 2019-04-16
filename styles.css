@@ -231,7 +231,7 @@ outline-color:#AAF0FF;
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 600px;
+  height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
 z-index:9999999;
@@ -245,7 +245,7 @@ top:7px;
 /* Display the modal when targeted */
 .modal-qs:target {
   display: table;
-  position: absolute;
+  position: fixed;
 }
 
 /* The modal box */
@@ -265,7 +265,7 @@ top:7px;
   border-radius:0px;
   text-align: justify;
   width: 100%;
-  height: 90%;
+  height: 95%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow:hidden;
   
